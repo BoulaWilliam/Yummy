@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy Restaurant</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&amp;family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="stylesheet" href="CSS/media.css" />
+</head>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container tec d-flex justify-content-between align-items-center p-1">
+        <!-- Logo -->
+        <a class="Logo fs-1 m-1" href="#">Yu<span>mm</span>y</a>
+        <!-- Collapse btn -->
+        <div class="hamburger navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <!-- Nav-item -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto ">
+                <li class="p-3">
+                    <a class="active" href="#home">HOME</a>
+                </li>
+                <li class="p-3">
+                    <a href="#team">TEAM</a>
+                </li>
+                <li class="p-3">
+                    <a href="#gallery">GALLERY</a>
+                </li>
+                <li class="p-3">
+                    <a href="#contact">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+        <div class="Dark-mode" id="moon">
+            <i class="m-1 ms-3 fa-solid fa-moon"></i>
+        </div>
+    </div>
+</nav>
+<!-- Home Section -->
+<section class="home pb-3" id="home">
+    <div class="container  pt-5 mt-5 d-flex align-items-center">
+        <div class="row pt-5 mt-5">
+            <div class="Home-Container">
+                <div class="Home-Context">
+                    <h1>ENJOY YOUR HEALTHY<br>DELICIOUS FOOD </>
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quis earum voluptatum adipisci at
+                        culpa?
+                    </p>
+                    <button class="btn main-btn"><a href="#gallery">Our Dishes</a></button>
+                </div>
+                <div class="Home-Image">
+                    <img src="images/hero-img.png" class="main img-fluid rounded-circle" alt="Salad">
+                    <div class="theFood pt-4">
+                        <img onclick="changeImage(this.src)" src="images/hero-img.png" class="rounded-circle" alt="">
+                        <img onclick="changeImage(this.src)" src="images/dessert - chocolate cake.png" class="rounded-circle" alt="">
+                        <img onclick="changeImage(this.src)" src="images/dessert - hot chocolate.png" class="rounded-circle" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Chefs Section -->
+<section class="team" id="team">
+    <div class="container my-5 py-5">
+        <div class="section-title text-center text-primary mb-5">
+            <h2 class="fs-1">Our <span>Professional</span> Chefs</h2>
+        </div>
+        <div class="theTeam">
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="TheChef mb-5">
+                        <!-- Work Image -->
+                        <div class="chef-box">
+                            <div class="chef-img">
+                                <img src="images/chefs-1.jpg" alt="" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <!-- Work Details/Content -->
+                        <div class="chef-content ">
+                            <div class="content  text-center py-3">
+                                <h2>William Torres</h2>
+                                <h5>Assistant Chef</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="TheChef mb-5">
+                        <!-- Work Image -->
+                        <div class="chef-box">
+                            <div class="chef-img">
+                                <img src="images/chefs-2.jpg" alt="" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <!-- Work Details/Content -->
+                        <div class="chef-content   ">
+                            <div class="content  text-center py-3">
+                                <h2>Sarah Angelo</h2>
+                                <h5>Chef</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="TheChef mb-5">
+                        <!-- Work Image -->
+                        <div class="chef-box">
+                            <div class="chef-img">
+                                <img src="images/chefs-3.jpg" alt="" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <!-- Work Details/Content -->
+                        <div class="chef-content   ">
+                            <div class="content  text-center py-3">
+                                <h2>Mike Henry</h2>
+                                <h5>Assistant Chef</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Gallery Section -->
+<section class="gallery" id="gallery">
+    <div class="container-fluid my-5 py-5">
+        <div class="section-title text-center text-primary mb-5">
+            <h2 class="fs-1">Our <span>Food</span> Gallery</h2>
+        </div>
+
+        <div class="row">
+            <div class="GalleryBox xs-100 s-100  md-50">
+                <div class="box md-50">
+                    <img src="images/meal-1.jpg" alt="">
+                    <div class="caption">
+                        <h3>Pizza</h3>
+
+                    </div>
+                </div>
+                <div class="box md-50">
+                    <img src="images/meal-4.jpg" alt="">
+                    <div class="caption">
+                        <h3>Slices Of Pizza</h3>
+                    </div>
+                </div>
+                <div class="box md-50">
+                    <img src="images/meal-2.jpg" alt="">
+                    <div class="caption">
+                        <h3>Beef Steaks</h3>
+                    </div>
+                </div>
+                <div class="box md-50">
+                    <img src="images/meal-7.jpg" alt="">
+                    <div class="caption">
+                        <h3>Pizza</h3>
+                    </div>
+                </div>
+                <div class="box md-50">
+                    <img src="images/meal-3.jpg" alt="">
+                    <div class="caption">
+                        <h3>Burger</h3>
+                    </div>
+                </div>
+                <div class="box md-50">
+                    <img src="images/meal-5.jpg" alt="">
+                    <div class="caption">
+                        <h3>Crispy Fried Chicken</h3>
+                    </div>
+                </div>
+                <div class="box md-50">
+                    <img src="images/meal-6.jpg" alt="">
+                    <div class="caption">
+                        <h3>Beef</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-title text-center text-primary mb-5">
+            <h2 class="fs-1">Contact <span>Us</span></h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="map">
+            <iframe style="border:0; width: 100%; height: 350px;"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                frameborder="0" allowfullscreen=""></iframe>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form text-center">
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                        required="">
+                </div>
+            </div>
+            <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
+            </div>
+            <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required=""></textarea>
+            </div>
+            <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <button class="btn  main-btn py-2 px-4 fs-6 fw-bold" type="submit">Submit</button>
+        </form>
+
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer id="footer" class="footer mt-5">
+    <div class="container">
+        <div class="footer-content">
+            <h3>Yummy</h3>
+        <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.
+        </p>
+        <div class="social-links">
+            <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="skype"><i class="fa-brands fa-skype"></i></a>
+            <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="copyright">
+            © Copyright <strong><span >Code With Me</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            <p>Designed By<span><b>Boula William</b></span> 2024</p>
+        </div>
+        </div>
+    </div>
+</footer>
+<!-- Scroll -->
+<div class="scrollTop" id="scrollToTopBtn" style="display: block;">
+    <i class="fa fa-arrow-up"></i>
+</div>
+<script src="JS/bootstrap.bundle.min.js"></script>
+<script src="JS/index.js"></script>
+</body>
+
+</html>
